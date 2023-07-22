@@ -14,7 +14,7 @@ export default function StoryCard(props) {
       ) : (
         ""
       )}
-      <p>props.item.</p>
+      <p>{props.item.storyText}</p>
     </div>
   );
 }
