@@ -8,4 +8,7 @@
         left: 50%;
         transform: translate(-50% , -50%);
     }
+    .story-bg{
+        background-image: linear-gradient( to top ,rgba(24, 24, 24, 0.582), rgba(24,24,24,0.582)), url("./assets/read-story-bg.jpg");
+    }
 }

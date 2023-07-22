@@ -1,11 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import WriteStory from "./components/WriteStory";
-import ShowStory from "./components/ShowStory";
+import Home from "./pages/Home";
+import WriteStory from "./pages/WriteStory";
+import CopyRight from "./components/CopyRight";
+import NavBar from "./components/NavBar";
+import ReadStory from "./pages/ReadStory";
 export default function App() {
   return (
     <>
       <BrowserRouter>
+        <NavBar />
         <Routes>
           <Route
             path="/"
@@ -16,10 +19,11 @@ export default function App() {
             element={<WriteStory/>}
           />
           <Route 
-            path="/show-story"
-            element={<ShowStory />}
+            path="/read-story"
+            element={<ReadStory />}
           />
         </Routes>
+        <CopyRight />
       </BrowserRouter>
     </>
   );
